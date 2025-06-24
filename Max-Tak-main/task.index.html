@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="task3.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+<a class="back-to-main" href="index.html">На главную</a>
+    <header>
+        <!-- Исправлено: вынес навигацию из тега <a> -->
+        <a class="logo" href="#">DNS</a>
+        <nav>
+            <a href="#">Войти</a>
+            <a href="#">Заказы</a>
+            <a href="#">Избранное</a>
+            <button>Каталог</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-product">
+            <img src="images/pro.jpg.webp" alt="">
+            <div class="hero-product-description">
+                <h1>Процессор</h1>
+                <h2>Процессор AMD Ryzen 5 3500 OEM</h2>
+                <p class="hero-product-price">4 199 ₽</p>
+                <p class="hero-product-about">AM4, 6 x 3.6 ГГц, L2 - 3 МБ, L3 - 16 МБ, 2 х DDR4-3200 МГц, TDP 65 Вт</p>
+
+                <button>Добавить в корзину</button>
+                <p class="hero-product-additional-details">Процессор AMD Ryzen 5 3500 OEM подойдет для сборки или модернизации игрового компьютера...</p>
+            </div>
+        </section>
+
+        <!-- Исправлено: класс "Products" на "products" -->
+        <section class="products">
+            <h2>Основные комплектующие для ПК</h2>
+            <!-- Исправлено: вложенность div, добавлен container -->
+            <div class="product-cards-container">
+                <div class="product-card">
+                    <img src="images/видеокарта.jpg.webp" alt="">
+                    <figcaption>
+                        <h3>Видеокарта</h3>
+                        <p class="product-card-about">GIGABYTE AMD Radeon 9070 XT GAMING OC...</p>
+                        <p class="hero-product-price">79 999 ₽</p>
+                    </figcaption>
+                </div>
+                <div class="product-card">
+                    <img src="images/images3.jpg" alt="">
+                    <figcaption>
+                        <h3>Материнская плата</h3>
+                        <p class="product-card-about">ASUS TUF GAMING B550M-E</p>
+                        <p class="hero-product-price">10 999 ₽</p>
+                    </figcaption>
+                </div>
+                <div class="product-card">
+                    <img src="images/imges4.jpg" alt="">
+                    <figcaption>
+                        <h3>Оперативная память</h3>
+                        <p class="product-card-about">Kingston FURY Beast Black AMD RGB...</p>
+                        <p class="hero-product-price">6 099 ₽</p>
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Изменено: полностью переработана структура футера -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>Социальные сети</h2>
+                <!-- Исправлено: "social-meda" на "social-media" -->
+                <div class="social-media">
+                    <a href="#"><img src="images/icons/Icon.svg" alt=""></a>
+                    <a href="#"><img src="images/icons/Icon-1.svg" alt=""></a>
+                    <a href="#"><img src="images/icons/Icon-2.svg" alt=""></a>
+                    <a href="#"><img src="images/icons/Icon-3.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <!-- Изменено: сделаны разные разделы вместо повторяющихся -->
+                <ul class="footer-links-list">
+                    <h3>Покупателям</h3>
+                    <li><a href="#">Как оформить заказ</a></li>
+                    <li><a href="#">Способы оплаты</a></li>
+                    <li><a href="#">Кредиты</a></li>
+                    <li><a href="#">Доставка</a></li>
+                </ul>
+                <ul class="footer-links-list">
+                    <h3>Компания</h3>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+                <ul class="footer-links-list">
+                    <h3>Помощь</h3>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Сервисные центры</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
